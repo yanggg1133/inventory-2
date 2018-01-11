@@ -1,0 +1,32 @@
+<div class="row">
+        <div class="col-md-12">
+        	<h1>Current Inventory Details</h1>
+        	<hr>
+        	<h4>Inventory Value {{money_format('%n', $total_worth)}}</h4>
+			<table cellpadding="0" cellspacing="0" border="0" class="reports-table table table-striped table-bordered">
+				<thead>
+				    <tr>
+				      <th> Product</th>
+				      <th> Quantity </th>
+				      <th> Total </th>
+				      <th> Tax </th>
+				      <th> Fee </th>
+				    </tr>
+				</thead>
+			  	<tbody>
+
+			  		@foreach ($products as $product)
+			    	<tr>
+				    <td>{{$amazon[0]["product"]}}</td>
+				    <td>{{$amazon[0]["qty"]}}</td>
+				    <td>{{money_format('%n', $amazon[0]["total"])}}</td>
+				    <td>{{money_format('%n', $amazon[0]["tax"])}}</td>
+				    <td>{{money_format('%n', $amazon[0]["fee"])}}</td>
+				    </tr>
+				    @endforeach
+
+				</tbody>
+			</table>
+			<h4>Inventory Value {{money_format('%n', $total_worth)}}</h4>
+		</div>
+	</div>
