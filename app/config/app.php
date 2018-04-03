@@ -124,6 +124,8 @@ return array(
 		'Cartalyst\Sentry\SentryServiceProvider',
 		'Barryvdh\DomPDF\ServiceProvider',
 		'Maatwebsite\Excel\ExcelServiceProvider',
+		'Way\Generators\GeneratorsServiceProvider',
+		'Xethron\MigrationsGenerator\MigrationsGeneratorServiceProvider',
 
 	),
 

@@ -55,9 +55,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'smd_inventory',
-			'username'  => 'socialmd',
-			'password'  => '#FPLPONI%E0AX^C59DV@!',
+			'database'  => 'change_database',
+			'username'  => 'change_user',
+			'password'  => 'change_password',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
